@@ -13,7 +13,7 @@ export class AuthGuard implements CanActivate {
     private alertify: AlertifyService) {}
 
   canActivate(): Observable<boolean> | Promise<boolean> | boolean {
-    if(this.authService.isLoggedIn) {
+    if (this.authService.isLoggedIn) {
       return true;
     }
 
